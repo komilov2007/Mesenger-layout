@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+
+  display: grid;
+  grid-template-columns: 5, 1fr;
+  grid-template-rows: 4, 1fr;
+  gap: 10px;
+  grid-template-areas:
+    's1 s2 s3 s4'
+    's5 s6 s7 s8'
+    's9 s10 s11 s12';
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.sect-1 {
+  grid-area: s1;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.sect-2 {
+  grid-area: s2;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.sect-3 {
+  grid-area: s3;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.sect-4 {
+  grid-area: s4;
+  margin-top: 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+.sect-5 {
+  grid-area: s5;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.sect-6 {
+  grid-area: s6;
+  transition: 0.3s;
+}
+.sect-7 {
+  grid-area: s7;
+  transition: 0.3s;
+}
+.sect-8 {
+  grid-area: s8;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.sect-9 {
+  grid-area: s9;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.sect-10 {
+  grid-area: s10;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.sect-11 {
+  grid-area: s11;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.sect-12 {
+  grid-area: s12;
+  transition: 0.3s;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+img {
+  width: 100%;
+}
+.prof {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.prf-tmg {
+  display: flex;
+}
+.prf {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.prf p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.prf p {
+  font-family: 'Roboto';
+  font-size: 13px;
+  color: darkgray;
+}
+i {
+  color: antiquewhite;
+}
+@media (max-width: 1000px) {
+  body {
+    grid-template-areas:
+      's1 s2 s3'
+      's4 s5 s6'
+      's7 s8 s9'
+      's10 s11 s12';
+  }
+  .prf p {
+    font-size: 10px;
+  }
+  .prf p:first-child {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    grid-template-areas:
+      's1 s2'
+      's3 s4'
+      's5 s6'
+      's7 s8'
+      's9 s10'
+      's11 s12';
+  }
+  .prf p {
+    font-size: 8px;
+  }
+  .prf p:first-child {
+    font-size: 14px;
+  }
+}
+@media (max-width: 250px) {
+  body {
+    grid-template-areas:
+      's1'
+      's2'
+      's3'
+      's4'
+      's5'
+      's6'
+      's7'
+      's8'
+      's9'
+      's10'
+      's11'
+      's12';
+  }
+  .prof {
+    width: 30px;
+    height: 30px;
+  }
+  .prf p:first-child {
+    font-size: 10px;
+  }
+}
+.sect-1:hover {
+  transform: scale(1.05);
+}
+.sect-2:hover {
+  transform: scale(1.05);
+}
+.sect-3:hover {
+  transform: scale(1.05);
+}
+.sect-4:hover {
+  transform: scale(1.05);
+}
+.sect-5:hover {
+  transform: scale(1.05);
+}
+.sect-6:hover {
+  transform: scale(1.05);
+}
+.sect-7:hover {
+  transform: scale(1.05);
+}
+.sect-8:hover {
+  transform: scale(1.05);
+}
+.sect-9:hover {
+  transform: scale(1.05);
+}
+.sect-10:hover {
+  transform: scale(1.05);
+}
+.sect-11:hover {
+  transform: scale(1.05);
+}
+.sect-12:hover {
+  transform: scale(1.05);
+}
+
