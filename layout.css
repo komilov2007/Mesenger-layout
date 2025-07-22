@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'hr hr hr hr hr hr hr hr hr hr hr hr'
+    's1 s1 s1 s1 s1 s1 s2 s2 s2 s2 s2 s2'
+    's3 s3 s3 s4 s4 s4 s5 s5 s5 s6 s6 s6'
+    's7 s7 s8 s8 s9 s9 s10 s10 s11 s11 s12 s12 ';
+  gap: 10px;
+  padding: 10px;
+}
+
+header {
+  grid-area: hr;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect1 {
+  grid-area: s1;
+  background-color: pink;
+  opacity: 45%;
+}
+.sect2 {
+  grid-area: s2;
+  background-color: pink;
+  opacity: 45%;
+}
+.sect3 {
+  grid-area: s3;
+  background-color: orange;
+  opacity: 45%;
+}
+.sect4 {
+  grid-area: s4;
+  background-color: orange;
+  opacity: 45%;
+}
+.sect5 {
+  grid-area: s5;
+  background-color: orange;
+  opacity: 45%;
+}
+.sect6 {
+  grid-area: s6;
+  background-color: orange;
+  opacity: 45%;
+}
+.sect7 {
+  grid-area: s7;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect8 {
+  grid-area: s8;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect9 {
+  grid-area: s9;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect10 {
+  grid-area: s10;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect11 {
+  grid-area: s11;
+  background-color: #423efb;
+  opacity: 45%;
+}
+.sect12 {
+  grid-area: s12;
+  background-color: #423efb;
+  opacity: 45%;
+}
+@media (max-width: 1000px) {
+  body {
+    grid-template-areas:
+      'hr hr hr hr hr hr hr hr hr hr hr hr'
+      's1 s1 s1 s1 s2 s2 s2 s2 s3 s3 s3 s3'
+      's4 s4 s4 s4 s4 s4 s5 s5 s5 s5 s5 s5'
+      's6 s6 s6 s7 s7 s7 s8 s8 s8 s9 s9 s9';
+  }
+  .sect3 {
+    background-color: pink;
+    opacity: 45%;
+  }
+  .sect6 {
+    background-color: #423efb;
+    opacity: 45%;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas:
+      'hr hr hr hr hr hr hr hr hr hr hr hr'
+      's1 s1 s1 s1 s1 s1 s3 s3 s3 s3 s3 s3'
+      's4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4'
+      's5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5'
+      's6 s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 s6'
+      's7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7 s7'
+      's8 s8 s8 s8 s8 s8 s8 s8 s8 s8 s8 s8'
+      's9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9 s9'
+      's10 s10 s10 s10 s10 s10 s10 s10 s10 s10 s10 s10'
+      's11 s11 s11 s11 s11 s11 s11 s11 s11 s11 s11 s11'
+      's12 s12 s12 s12 s12 s12 s12 s12 s12 s12 s12 s12';
+  }
+
+  .sect2 {
+    display: none;
+  }
+  header {
+    background-color:blueviolet;
+    opacity: 25%;
+  }
+}
