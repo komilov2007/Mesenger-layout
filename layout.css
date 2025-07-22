@@ -109,7 +109,7 @@ header {
     grid-template-rows: repeat(11, 1fr);
     grid-template-areas:
       'hr hr hr hr hr hr hr hr hr hr hr hr'
-      's1 s1 s1 s1 s1 s1 s3 s3 s3 s3 s3 s3'
+      's1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1'
       's4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4'
       's5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5'
       's6 s6 s6 s6 s6 s6 s6 s6 s6 s6 s6 s6'
@@ -122,6 +122,9 @@ header {
   }
 
   .sect2 {
+    display: none;
+  }
+  .sect3 {
     display: none;
   }
   header {
